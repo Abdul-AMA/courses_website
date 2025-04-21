@@ -82,7 +82,6 @@ nav.pages {
   }
 
   .materials-data {
-    border: 1px solid #000;
         display: flex;
     flex-wrap: wrap;
     gap: 10px;
