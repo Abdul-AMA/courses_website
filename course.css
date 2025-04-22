@@ -1,11 +1,16 @@
 
 :root {
     padding: 20px;
-    background-color: rgb(245, 237, 226);
+    background-color: #FFFFFF;
     font-family:Arial, Helvetica, sans-serif;
 
   }
+
   
+  .header{
+
+    background-color: #F5F9FA;
+  }
 
 nav.pages {
     padding: 10px 16px;
@@ -67,6 +72,7 @@ nav.pages {
 
   .social-links {
     margin-top: 10px;
+    margin-left: 10px;
   }
   
   .social-links a {
@@ -206,3 +212,172 @@ nav.pages {
     font-weight: bold;
     cursor: pointer;
   }
+
+
+  .course-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .course-left {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .course-right {
+    flex: 1;
+    min-width: 230px;
+    padding: 10px;
+  }
+  
+  .Topics{
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
+  .progress-container {
+    position: relative;
+    width: 300px; /* Match progress bar width */
+  }
+  .progress-bar {
+    background-color: white;
+    color: #6ABD8A;
+    border-radius: 10px;
+    width: 400px;
+    height: 5px;
+    margin-bottom: 15px;
+  }
+
+  /* why each browser needs a differnat style, i have no idea*/
+
+progress::-webkit-progress-value {
+  background: linear-gradient(to right, #00c6ff, #6ABD8A); 
+  border-radius: 5px;
+}
+
+progress::-moz-progress-bar {
+  background: linear-gradient(to right, #00c6ff, #6ABD8A); 
+  border-radius: 5px;
+}
+
+.progress-text {
+  position: absolute;
+  top: 15px;
+  font-size: 12px;
+  color: #485293;
+  left: 65%;
+  transform: translateX(220%);
+}
+
+.you-label {
+  position: absolute;
+  bottom: 30px;
+  left: 65%;
+  transform: translateX(210%);
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+.text-you{
+
+  font-size: 10px;
+  color: #485293;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px; 
+  height: 20px; 
+  border: 2px solid #C8C8C8; 
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.triangle-down { 
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #C8C8C8;
+  margin-top: 2px;
+}
+
+.week-description{
+  color: #666;
+
+}
+
+.Weeks{
+  margin-top: 40px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+
+.week-table {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  border-collapse: collapse; 
+  border-bottom: 1px solid #ddd;
+
+
+}
+
+
+.week-table td {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  padding-top: 15px;
+
+
+  
+}
+
+.value-icon-file {
+  width: 24px;
+  padding: 0; 
+}
+.value-icon-lock {
+  width: 24px;
+  padding: 0; 
+}
+
+.value-week {
+  text-align:left;
+  color: #666;
+  display: flex;      
+  gap: 8px;             
+}
+
+.value-week-data {
+  width: 200px;
+  padding-left: 10px;
+
+}
+
+.question-time-data {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.question{
+  background-color: #F2FAF8;
+  color: #6ABD8A;
+  padding : 3px 3px 3px 1px;
+  display: inline-block; 
+  box-sizing: border-box; 
+}
+
+.time{
+  background-color: #FDF2F4;
+  color: #e43d20;
+  padding : 3px 3px 3px 1px;
+  display: inline-block; 
+  box-sizing: border-box; 
+}
