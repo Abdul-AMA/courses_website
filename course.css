@@ -323,21 +323,19 @@ progress::-moz-progress-bar {
   border-radius: 10px;
   padding: 20px;
   border-collapse: collapse; 
-  border-bottom: 1px solid #ddd;
-
 
 }
 
 
 .week-table td {
-  border-bottom: 1px solid #ddd;
   padding-bottom: 15px;
   padding-top: 15px;
-
-
-  
 }
 
+.week-table tr {
+  border-bottom: 1px solid #ddd;
+
+}
 .value-icon-file {
   width: 24px;
   padding: 0; 
@@ -351,7 +349,7 @@ progress::-moz-progress-bar {
   text-align:left;
   color: #666;
   display: flex;      
-  gap: 8px;             
+  gap: 8px;         
 }
 
 .value-week-data {
@@ -364,6 +362,7 @@ progress::-moz-progress-bar {
   display: flex;
   flex-direction: column; 
   align-items: center;
+  font-size: 15px;
 }
 
 .question{
@@ -371,7 +370,8 @@ progress::-moz-progress-bar {
   color: #6ABD8A;
   padding : 3px 3px 3px 1px;
   display: inline-block; 
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  padding-bottom: 4px;
 }
 
 .time{
