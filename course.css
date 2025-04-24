@@ -238,7 +238,7 @@ nav.pages {
 
   .progress-container {
     position: relative;
-    width: 300px; /* Match progress bar width */
+    width: 300px; 
   }
   .progress-bar {
     background-color: white;
